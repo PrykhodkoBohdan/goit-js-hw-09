@@ -16,3 +16,21 @@ img {
   display: block;
   max-width: 100%;
 }
+.value {
+color: gray;
+}
+
+.label {
+color: gray;
+}
+
+.timer {
+display: flex;
+justify-content: space-evenly;
+}
+
+.inputs {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
