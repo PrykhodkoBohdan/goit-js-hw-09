@@ -8,6 +8,7 @@ const refs = {
 };
 
 let {delay,step,amount,form} = refs;
+
 form.addEventListener('submit',createPromiseStart)
 
 function createPromiseStart(e) {
@@ -15,9 +16,7 @@ function createPromiseStart(e) {
   step = Number(step.value);
   delay = Number(delay.value);
   amount = Number(amount.value);
-  console.log('я then',step.value);
   for (let position = 1; position <= amount; position++) {
-    console.log('я then');
     createPromise(position, delay)
       .then(({ position, delay }) => {
            // Fulfill
